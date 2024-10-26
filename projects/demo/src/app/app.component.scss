@@ -1,4 +1,10 @@
-.app {
-    justify-content: center;
-    display: flex;
+.container {
+  display: flex;
+  height: calc(100vh - 64px); /* Set height to fill the viewport */
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds */
+  padding: 20px;
 }
