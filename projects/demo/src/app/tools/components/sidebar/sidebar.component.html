@@ -1,7 +1,7 @@
 <ul class="nav flex-column">
   <ng-container *ngFor="let nav of navList">
     <li class="nav-item">
-      <a class="nav-link" href="#">
+      <a class="nav-link"  [routerLink]="nav.link">
         <i class="bi bi-{{nav.icon}}"></i> {{nav.name}}
       </a>
     </li>
