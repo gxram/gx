@@ -1,10 +1,14 @@
-<div>
+<div class="container-fluid">
   <app-header></app-header>
-  <div class="container">
-   <app-sidebar></app-sidebar>
-    <main class="main-content">
-      Main Content
-    </main>
+  <div class="row content">
+    <div class="sidebar col-md-3 col-lg-2 bg-light border-end">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-md-9 col-lg-10">
+      <div class="main-content">
+        <p>This is the main content area.</p>
+      </div>
+    </div>
   </div>
   <app-footer></app-footer>
 </div>

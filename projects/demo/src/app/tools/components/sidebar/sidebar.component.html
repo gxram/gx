@@ -1,7 +1,12 @@
-<nav class="sidebar">
-    <ul>
-      <li><a href="#">Module 1</a></li>
-      <li><a href="#">Module 2</a></li>
-      <li class="active"><a href="#">Module 3</a></li>
-    </ul>
-  </nav>
+<ul class="nav flex-column">
+  <ng-container *ngFor="let nav of navList">
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <i class="bi bi-{{nav.icon}}"></i> {{nav.name}}
+      </a>
+    </li>
+  </ng-container>
+ <li class="nav-item">
+    <a class="nav-link active" href="#"><i class="bi bi-house-fill"></i> Item 2</a>
+  </li>
+</ul>
