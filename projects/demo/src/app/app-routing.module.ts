@@ -19,6 +19,13 @@ const routes: Routes = [
         (c) => c.ProfileComponent
       ),
   },
+  {
+    path: 'blogs',
+    loadComponent: () =>
+      import('./components/blogs/blogs.component').then(
+        (c) => c.BlogsComponent
+      ),
+  },
 ];
 
 @NgModule({

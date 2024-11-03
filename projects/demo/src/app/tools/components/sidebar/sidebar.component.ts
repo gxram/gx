@@ -18,13 +18,13 @@ export class SidebarComponent {
       icon: 'house-fill',
       link: 'home'
     },{
-      name: 'Map',
-      icon: 'map',
-      link: 'map'
-    },{
       name: 'Profile',
       icon: 'person-bounding-box',
       link: 'profile'
-    },
+    },{
+      name: 'Blogs',
+      icon: 'text-paragraph',
+      link: 'blogs'
+    }
   ];
 }
